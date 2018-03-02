@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class Experiences extends Component {
+class Projects extends Component {
   render() {
     return(
       <div className="experiences">
@@ -10,7 +10,7 @@ class Experiences extends Component {
         <div className="experienceRight">
           <b className="title">{this.props.title}</b>
           <p className="description">{this.props.description}</p>
-          <p className="location"><img src="https://lh3.google.com/u/0/d/1N6D3_zuAm5K7YuxI16wSohRzSVRhOkTV=w32-h32-p-k-nu-iv1" alt="location icon"/> {this.props.location}</p>
+          <p className="location">{this.props.location}</p>
         </div>
         <div className="clear"></div>
       </div>
@@ -18,4 +18,4 @@ class Experiences extends Component {
   }
 }
 
-export default Experiences;
+export default Projects;

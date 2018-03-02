@@ -126,7 +126,10 @@ body, html{
   clear:both;
 }
 
-
+.contact {
+  float: center;
+  text-align: left;
+}
 
 
 
