@@ -2,23 +2,46 @@ import React, { Component } from 'react';
 import Experiences from './Components/Experiences';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
+import * as Scroll from 'react-scroll';
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import './css/App.css';
 
+import downarrow from './images/down-icon.png';
+
+
 class App extends Component {
+
+  top = function(){
+    var element = document.getElementById("top");
+    var scrollIntoViewOptions = {
+      behavior: "smooth",
+    }
+    element.scrollIntoView(scrollIntoViewOptions);
+  };
+  profile = function(){
+    var element = document.getElementById("profile");
+    var scrollIntoViewOptions = {
+      behavior: "smooth",
+    }
+    element.scrollIntoView(scrollIntoViewOptions);
+  };
+
   render() {
+    var d = new Date()
+
     return (
       <div className="App">
 
-        <div className="pimg1">
+        <div id="top" className="pimg1">
           <div className="ptext">
             <span className="border">
               Halmon Lui
             </span>
               <p className="border trans">Computer Engineer</p>
+              <img className="toProfile" onClick={this.profile} src={downarrow} alt="V"/>
           </div>
         </div>
-
-        <section className="section section-light">
+        <section id="profile" className="section section-light">
           <h2>Profile</h2>
           <hr/>
           <div className="profileLeft">
@@ -63,13 +86,13 @@ class App extends Component {
             place="Wentworth Institute of Technology"
             duration="September 2015 - Present"
             title="Bachelor - Computer Engineering (Minor: Computer Science)"
-//          description="text here text here text here text here"
+            description=""
             location="Boston, MA"/>
           <Experiences
             place="Braintree High School"
             duration="September 2011 - June 2015"
             title="High School Education"
-//          description="text here text here text here text here"
+            description=""
             location="Braintree, MA"/>
           <br/>
           <br/>
@@ -79,20 +102,20 @@ class App extends Component {
           <Experiences
             place="Biotake"
             duration="January 2018 - Present"
-            title="Fulltime Research Co-op"
-            description="text here text here text here text here"
+            title="Full-time Research Co-op"
+            description="I engineered better methods for creating a lightweight real-time big data framework. Additionally, I designed the RESTful API and Database model."
             location="Boston, MA"/>
           <Experiences
             place="Electrical Lab"
             duration="September 2015 - Present"
             title="Part-time Lab Assistant"
-            description="text here text here text here text here"
+            description="I manage the inventory, set up the lab equipment, and help students with parts that they need for their circuits. "
             location="Boston, MA"/>
           <Experiences
             place="LM Heavy Civil"
             duration="May 2016 - August 2016"
-            title="Fulltime Estimating Intern"
-            description="text here text here text here text here"
+            title="Full-time Estimating Intern"
+            description="I did important takeoffs for upcoming civil projects which helped decide the total bid price of a new job."
             location="Quincy, MA"/>
           <br/>
           <br/>
@@ -103,7 +126,7 @@ class App extends Component {
             place="Dunkin' Donuts"
             duration="September 2015 - Present"
             title="Part-time Employee"
-            description="text here text here text here text here"
+            description=""
             location="Milton, MA"/>
           <Experiences
             place="Hackathons"
@@ -123,6 +146,7 @@ class App extends Component {
 
         <section className="section section-light">
           <h2>github.io/halmonlui</h2>
+          <hr/>
           <p>
             text heret here text here text here text here text here text here text here
           </p>
@@ -139,10 +163,19 @@ class App extends Component {
         <section className="section section-dark">
           <h2>Contact</h2>
           <hr/>
-          <Contact/>
-          <p>
-            text heret here text here text here text here text here text here text here
-          </p>
+          <br/>
+          <div className="ContactWrapper">
+            <Contact/>
+          </div>
+          <br/><br/><br/>
+
+          <footer>
+          <hr/>
+          <br/>
+          <a className="toTop" onClick={this.top}>Back To The Top</a>
+          <p><i>Copyright © {d.getFullYear()} Halmon Lui</i></p>
+          </footer>
+
         </section>
       </div>
     );

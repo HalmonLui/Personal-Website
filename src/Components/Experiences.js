@@ -13,6 +13,7 @@ class Experiences extends Component {
           <p className="location"><img src="https://lh3.google.com/u/0/d/1N6D3_zuAm5K7YuxI16wSohRzSVRhOkTV=w32-h32-p-k-nu-iv1" alt="location icon"/> {this.props.location}</p>
         </div>
         <div className="clear"></div>
+        <br/>
       </div>
     );
   }

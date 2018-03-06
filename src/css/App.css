@@ -60,6 +60,7 @@ body, html{
   font-size:27px;
   letter-spacing:8px;
   text-transform:uppercase;
+  text-shadow: 1px 1px 2px black;
 }
 
 .ptext .border{
@@ -126,12 +127,60 @@ body, html{
   clear:both;
 }
 
-.contact {
-  float: center;
+.ContactWrapper {
+  text-align: center;
+}
+.contacts {
+  display: inline-block;
   text-align: left;
 }
 
+.hyperlink {
+  color: #ddd;
+  text-decoration: none;
+}
 
+footer hr{
+  border: none;
+  background-color: #33383c;
+  color: #33383c;
+  height: 1px;
+}
+footer p{
+  font-size: 14px;
+  text-align: right;
+}
+
+.toTop{
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+  color: white;
+  background-color: none;
+  border: solid;
+  border-color: #33383c;
+  border-radius: 0px;
+  border-width: thin;
+}
+.toTop:hover{
+  background-color: #33383c;
+  cursor: pointer;
+}
+.toTop:active{
+  border-width: medium;
+}
+
+.toProfile{
+}
+.toProfile:hover{
+  cursor: pointer;
+}
+
+
+#particles-js{
+  background:firebrick;
+  height:400px;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
