@@ -11,6 +11,15 @@ import downarrow from './images/down-icon.png';
 
 class App extends Component {
 
+  openSlideMenu = function(){
+    var element = document.getElementById("side-menu");
+    element.style.width = "250px";
+  };
+  closeSlideMenu = function(){
+    var element = document.getElementById("side-menu");
+    element.style.width = "0px";
+  };
+
   top = function(){
     var element = document.getElementById("top");
     var scrollIntoViewOptions = {
@@ -25,13 +34,55 @@ class App extends Component {
     }
     element.scrollIntoView(scrollIntoViewOptions);
   };
+  experience = function(){
+    var element = document.getElementById("experience");
+    var scrollIntoViewOptions = {
+      behavior: "smooth",
+    }
+    element.scrollIntoView(scrollIntoViewOptions);
+  };
+  project = function(){
+    var element = document.getElementById("project");
+    var scrollIntoViewOptions = {
+      behavior: "smooth",
+    }
+    element.scrollIntoView(scrollIntoViewOptions);
+  };
+  contact = function(){
+    var element = document.getElementById("contact");
+    var scrollIntoViewOptions = {
+      behavior: "smooth",
+    }
+    element.scrollIntoView(scrollIntoViewOptions);
+  };
 
-  render() {
+    render() {
     var d = new Date()
 
     return (
       <div className="App">
+        <nav className="navbar">
+          <span className="open-slide">
+            <p onClick={this.openSlideMenu}>
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+              </svg>
+            </p>
+          </span>
+        </nav>
 
+        <div id="side-menu" className="side-nav">
+          <p className="btn-close" onClick={this.closeSlideMenu}>&times;</p>
+          <p onClick={this.top}>Welcome</p>
+          <p onClick={this.profile}>Profile</p>
+          <p onClick={this.experience}>Experience</p>
+          <p onClick={this.project}>Projects</p>
+          <p onClick={this.contact}>Contact</p>
+        </div>
+
+        <div id="main" onClick={this.closeSlideMenu}>
         <div id="top" className="pimg1">
           <div className="ptext">
             <span className="border">
@@ -70,7 +121,7 @@ class App extends Component {
           <div className="clear"></div>
         </section>
 
-        <div className="pimg2">
+        <div id="experience" className="pimg2">
           <div className="ptext">
             <span className="border trans">
               Experience
@@ -136,7 +187,7 @@ class App extends Component {
             location="Boston, MA"/>
         </section>
 
-        <div className="pimg3">
+        <div id="project" className="pimg3">
           <div className="ptext">
             <span className="border trans">
               Projects
@@ -152,7 +203,7 @@ class App extends Component {
           </p>
         </section>
 
-        <div className="pimg3">
+        <div id="contact" className="pimg3">
           <div className="ptext">
             <span className="border trans">
               Contact
@@ -177,6 +228,7 @@ class App extends Component {
           </footer>
 
         </section>
+        </div>
       </div>
     );
   }
