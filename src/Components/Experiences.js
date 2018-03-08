@@ -6,7 +6,7 @@ class Experiences extends Component {
       <div className="experiences">
         <div className="experienceLeft">
           <b className="place">{this.props.place}</b>
-          <p className="duration">{this.props.duration}</p>
+          <p className="duration"><i>{this.props.duration}</i></p>
         </div>
         <div className="experienceRight">
           <b className="title">{this.props.title}</b>

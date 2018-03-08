@@ -151,7 +151,7 @@ body, html{
   float:left;
   text-align:left;
   padding:20px;
-  margin: 0 0 0 10vw;
+  margin: 0 0 0 20vw;
 }
 .profileRight{
   display: inline-block;
@@ -168,7 +168,7 @@ body, html{
   float:left;
   text-align:left;
   padding:5px;
-  margin: 0 0 0 10vw;
+  margin: 0 0 0 20vw;
 }
 .experienceRight{
   display: inline-block;
@@ -181,6 +181,38 @@ body, html{
 
 .clear {
   clear:both;
+}
+
+#github{
+  text-decoration: none;
+  color: #000;
+}
+#github:hover{
+  color:#666;
+}
+.projects{
+  float: left;
+  margin: 80px 6% 40px 6%;
+  height:300px;
+  width:21.33%;
+  position:relative;
+}
+.projects .image{
+  position:absolute;
+  height:300px;
+  width: 100%;
+  left: 0px;
+  opacity: .9;
+  transition: .5s;
+  box-shadow: 1px 2px 1px gray;
+}
+.tags{
+  font-size: 14px;
+}
+.projects .image:hover{
+  cursor: pointer;
+  opacity: 0.1;
+  transition: 0.5s;
 }
 
 .ContactWrapper {
@@ -247,10 +279,17 @@ footer p{
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
-  .profileLeft .profileRight{
+  .profileLeft, .profileRight{
     margin:0px 0 0 0;
-    padding:0px
+    padding:0px;
+    width:50%;
   }
+  .experienceLeft, .experienceRight{
+    margin:0px 0 0 0;
+    width:50%;
+    padding:0px;
+  }
+
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

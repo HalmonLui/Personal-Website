@@ -6,7 +6,7 @@ class Contact extends Component {
   render() {
     return(
       <div className="contacts">
-        <a className="hyperlink" href="mailto:luih@wit.edu">
+        <a className="hyperlink" target="_blank" href="mailto:luih@wit.edu">
           <p className="contact">
             <img src={emailicon} width="25px" alt="email icon"/> luih@wit.edu
           </p>
@@ -14,7 +14,7 @@ class Contact extends Component {
         <p className="contact">
           <img src={phoneicon} width="25px" alt="cellphone icon"/> (617) 733-0634
         </p>
-        <a className="hyperlink" href="https://www.linkedin.com/in/halmonlui">
+        <a className="hyperlink" target="_blank" href="https://www.linkedin.com/in/halmonlui">
           <p className="contact">
             <img src={contacticon} width="25px" alt="linkedin icon"/> www.linkedin.com/in/halmonlui
           </p>

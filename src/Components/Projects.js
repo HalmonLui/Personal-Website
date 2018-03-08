@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
+
 class Projects extends Component {
   render() {
     return(
-      <div className="experiences">
-        <div className="experienceLeft">
-          <b className="place">{this.props.place}</b>
-          <p className="duration">{this.props.duration}</p>
-        </div>
-        <div className="experienceRight">
-          <b className="title">{this.props.title}</b>
+      <div className="projects">
+        <b className="title">{this.props.title}</b>
+        <div className="projectsWrapper">
+          <a className="link" target="_blank" href={this.props.link}>
+            <img className="image" src={this.props.source}/>
+          </a>
+          <br/>
           <p className="description">{this.props.description}</p>
-          <p className="location">{this.props.location}</p>
+          <br/>
+          <br/>
+          <p className="tags"><i>tags: {this.props.tags}</i></p>
         </div>
         <div className="clear"></div>
       </div>

@@ -7,7 +7,9 @@ import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy,
 import './css/App.css';
 
 import downarrow from './images/down-icon.png';
-
+import personalwebsite from './images/personalwebsite.png';
+import chatbot from './images/chatbot.png';
+import porododge from './images/poroDodge.png';
 
 class App extends Component {
 
@@ -92,7 +94,7 @@ class App extends Component {
               <img className="toProfile" onClick={this.profile} src={downarrow} alt="V"/>
           </div>
         </div>
-        <section id="profile" className="section section-light">
+        <section id="profile" className="section section-dark">
           <h2>Profile</h2>
           <hr/>
           <div className="profileLeft">
@@ -120,6 +122,22 @@ class App extends Component {
           </div>
           <div className="clear"></div>
         </section>
+        <section id="profile" className="section section-light">
+        <h2>Education</h2>
+        <hr/>
+        <Experiences
+          place="Wentworth Institute of Technology"
+          duration="September 2015 - Present"
+          title="Bachelor - Computer Engineering (Minor: Computer Science)"
+          description=""
+          location="Boston, MA"/>
+        <Experiences
+          place="Braintree High School"
+          duration="September 2011 - June 2015"
+          title="High School Education"
+          description=""
+          location="Braintree, MA"/>
+        </section>
 
         <div id="experience" className="pimg2">
           <div className="ptext">
@@ -130,24 +148,6 @@ class App extends Component {
         </div>
 
         <section className="section section-dark">
-
-          <h2>Education</h2>
-          <hr/>
-          <Experiences
-            place="Wentworth Institute of Technology"
-            duration="September 2015 - Present"
-            title="Bachelor - Computer Engineering (Minor: Computer Science)"
-            description=""
-            location="Boston, MA"/>
-          <Experiences
-            place="Braintree High School"
-            duration="September 2011 - June 2015"
-            title="High School Education"
-            description=""
-            location="Braintree, MA"/>
-          <br/>
-          <br/>
-
           <h2>Career</h2>
           <hr/>
           <Experiences
@@ -196,11 +196,30 @@ class App extends Component {
         </div>
 
         <section className="section section-light">
-          <h2>github.io/halmonlui</h2>
+          <a id="github" target="_blank" href="https://github.com/halmonlui"><h2>github.com/halmonlui</h2></a>
           <hr/>
-          <p>
-            text heret here text here text here text here text here text here text here
-          </p>
+          <Projects
+            title="Personal Website"
+            source={personalwebsite}
+            link="https://github.com/HalmonLui/Personal-Website"
+            description="You are here! This portfolio-type website is actually hosted on a Raspberry Pi 3."
+            tags="Node.js, React.js, HTML5, CSS3, RaspberryPi3"
+          />
+          <Projects
+            title="Texting Chatbot"
+            source={chatbot}
+            link="https://github.com/HalmonLui/MLH-Local-Hack-Day"
+            description="Texting chatbot assists in daily minor tasks. Eg: Searching for wikipedia articles, current stock prices, etc."
+            tags="Python3, Flask, Twilio, Ngrok"
+          />
+          <Projects
+            title="Poro Dodge Game"
+            source={porododge}
+            link="https://github.com/HalmonLui/Poro-Dodge"
+            description="Computer game where you play as a Poro and have to dodge rockets. Eat cookies to move faster!"
+            tags="Python3, Pygame"
+          />
+          <div className="clear"></div>
         </section>
 
         <div id="contact" className="pimg3">
