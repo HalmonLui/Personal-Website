@@ -176,7 +176,8 @@ class App extends Component {
             location="Quincy, MA"/>
           <br/>
           <br/>
-
+          </section>
+          <section className="section section-light">
           <h2>Additional Experience</h2>
           <hr/>
           <Experiences
