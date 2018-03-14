@@ -287,6 +287,9 @@ footer p{
   .pimg1, .pimg2, .pimg3, .pimg4{
     background-attachment:scroll;
   }
+  .pimg1{
+    min-height:800px;  
+  }
   .profileLeft, .profileRight{
     position: relative;
     margin:0px 0px 0 0;
