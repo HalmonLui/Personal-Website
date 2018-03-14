@@ -111,13 +111,19 @@ class App extends Component {
           <div className="profileRight">
             <h3>About Me</h3>
             <p>
-            text heret here text here text here text here text here text here text here
-            text heret here text here text here text here text here text here text here
-            text heret here text here text here text here text here text here text here
-            text heret here text here text here text here text here text here text here
-            text heret here text here text here text here text here text here text here
-            text heret here text here text here text here text here text here text here
-            text heret here text here text here text here text here text here text here
+              Hey! I’m Halmon Lui, a student who loves working from the front-end to the back-end.
+            </p>
+            <p>
+              I enjoy bringing ideas to life be it designing a website, creating a program, or even building a hack which includes hardware.
+            </p>
+            <p>
+              It all started with my first program on a TI-84 calculator: the quadratic formula. Now I can’t seem to get enough of programming. I pursue the satisfaction of making something work and I will charge like a bull until it does.
+            </p>
+            <p>
+              I grew up in the Greater Boston Area where the weather never ceases to surprise and the word road is synonymous to pothole.
+            </p>
+            <p>
+              If you have a question for me or want to drop me a quick note, please do not hesitate to <a id="getInTouch" onClick={this.contact}>get in touch</a>.
             </p>
           </div>
           <div className="clear"></div>
@@ -222,7 +228,7 @@ class App extends Component {
           <div className="clear"></div>
         </section>
 
-        <div id="contact" className="pimg3">
+        <div id="contact" className="pimg4">
           <div className="ptext">
             <span className="border trans">
               Contact
