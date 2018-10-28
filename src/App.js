@@ -10,6 +10,7 @@ import downarrow from './images/down-icon.png';
 import personalwebsite from './images/personalwebsite.png';
 import chatbot from './images/chatbot.png';
 import porododge from './images/poroDodge.png';
+import musicboi from './images/musicboi.png';
 
 class App extends Component {
 
@@ -103,7 +104,7 @@ class App extends Component {
               <b>Name:</b> <br/>
               Halmon Lui <br/><br/>
               <b>Age:</b> <br/>
-              20 years <br/><br/>
+              21<br/><br/>
               <b>Location:</b> <br/>
               Greater Boston, MA
             </p>
@@ -111,16 +112,16 @@ class App extends Component {
           <div className="profileRight">
             <h3>About Me</h3>
             <p>
-              Hey! I’m Halmon Lui, a student who loves working from the front-end to the back-end.
+              Hi I’m Halmon, a student who enjoys working from the front-end to the back-end.
             </p>
             <p>
-              I enjoy bringing ideas to life be it designing a website, creating a program, or even building a hack which includes hardware.
+              I'm constantly cycling through new ideas be it designing a website or creating a program.
             </p>
             <p>
-              It all started with my first program on a TI-84 calculator: the quadratic formula. Now I can’t seem to get enough of programming. I pursue the satisfaction of making something work and I will charge like a bull until it does.
+              It all started with my TI-84: the quadratic formula, the gateway drug to programming.
             </p>
             <p>
-              I grew up in the Greater Boston Area where the weather never ceases to surprise and the word road is synonymous to pothole.
+              Aside from programming, I'm an avid pianist and I love to create music.
             </p>
             <p>
               If you have a question for me or want to drop me a quick note, please do not hesitate to <a id="getInTouch" onClick={this.contact}>get in touch</a>.
@@ -157,10 +158,16 @@ class App extends Component {
           <h2>Career</h2>
           <hr/>
           <Experiences
+            place="Visible Systems Corp"
+            duration="September 2018 - Present"
+            title="Full-time Research Co-op"
+            description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework."
+            location="Boston, MA"/>
+          <Experiences
             place="Biotake"
             duration="January 2018 - Present"
-            title="Full-time Research Co-op"
-            description="I engineered better methods for creating a lightweight real-time big data framework. Additionally, I designed the RESTful API and Database model."
+            title="Research Assistant"
+            description="I engineered better methods for creating a lightweight real-time big data framework. Additionally, I designed the RESTful API and Database model with a paper on security"
             location="Boston, MA"/>
           <Experiences
             place="Electrical Lab"
@@ -181,17 +188,17 @@ class App extends Component {
           <h2>Additional Experience</h2>
           <hr/>
           <Experiences
+          place="Hackathons"
+          duration="December 2017 - Present"
+          title="Hacker"
+          description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018"
+          location="Boston, MA"/>
+          <Experiences
             place="Dunkin' Donuts"
-            duration="September 2015 - Present"
+            duration="September 2015 - June 2018"
             title="Part-time Employee"
             description=""
             location="Milton, MA"/>
-          <Experiences
-            place="Hackathons"
-            duration="December 2017 - Present"
-            title="Hacker"
-            description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018"
-            location="Boston, MA"/>
         </section>
 
         <div id="project" className="pimg3">
@@ -209,7 +216,7 @@ class App extends Component {
             title="Personal Website"
             source={personalwebsite}
             link="https://github.com/HalmonLui/Personal-Website"
-            description="You are here! This portfolio-type website is actually hosted on a Raspberry Pi 3."
+            description="You are here! Originally hosted on a RaspberryPi3, I have transferred hosting to the more stable Heroku."
             tags="Node.js, React.js, HTML5, CSS3, RaspberryPi3"
           />
           <Projects
@@ -220,11 +227,11 @@ class App extends Component {
             tags="Python3, Flask, Twilio, Ngrok"
           />
           <Projects
-            title="Poro Dodge Game"
-            source={porododge}
-            link="https://github.com/HalmonLui/Poro-Dodge"
-            description="Computer game where you play as a Poro and have to dodge rockets. Eat cookies to move faster!"
-            tags="Python3, Pygame"
+            title="MusicBoi"
+            source={musicboi}
+            link="https://github.com/HalmonLui/hack_harvard_2018/tree/FlaskServer"
+            description="Transform your words to midi music through our app, website, or chrome extension."
+            tags="Python3, Flask, Serveo, React-Native"
           />
           <div className="clear"></div>
         </section>
