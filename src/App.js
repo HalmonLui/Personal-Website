@@ -160,7 +160,7 @@ class App extends Component {
           <Experiences
             place="Visible Systems Corp"
             duration="September 2018 - Present"
-            title="Full-time Research Co-op"
+            title="Full-time Developer Co-op"
             description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework."
             location="Boston, MA"/>
           <Experiences
