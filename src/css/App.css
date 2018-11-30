@@ -272,7 +272,9 @@ footer p {
 }
 
 .toProfile {
-  @include animation(bounce 2s infinite);
+  animation: bounce infinite 0.75s linear;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
 }
 .toProfile:hover {
   cursor: pointer;
@@ -325,6 +327,7 @@ footer p {
     text-align: center;
   }
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -334,10 +337,18 @@ footer p {
   }
 }
 
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
 .example-appear {
   opacity: 0.01;
 }
-
 .example-appear.example-appear-active {
   opacity: 1;
   transition: opacity 1s ease-in;
