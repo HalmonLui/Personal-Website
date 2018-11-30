@@ -6,6 +6,7 @@ import * as Scroll from "react-scroll";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import { CSSTransitionGroup } from "react-transition-group";
+import Particles from "react-particles-js";
 import {
   Link,
   DirectLink,
@@ -115,18 +116,73 @@ class App extends Component {
                 <div className="ptext">
                   <span className="border">Halmon Lui</span>
                   <p className="border trans">Computer Engineer</p>
-                  <div className="toProfile">
-                    <img
-                      className="toProfile"
-                      onClick={this.profile}
-                      src={downarrow}
-                      alt="V"
-                    />
-                  </div>
+
+                  <img
+                    className="toProfile"
+                    onClick={this.profile}
+                    src={downarrow}
+                    alt="V"
+                  />
                 </div>
               </CSSTransitionGroup>
+              <Particles
+                params={{
+                  particles: {
+                    number: {
+                      value: 300,
+                      density: {
+                        enable: false
+                      }
+                    },
+                    color: {
+                      value: "fff"
+                    },
+                    size: {
+                      value: 3,
+                      random: true,
+                      anim: {
+                        speed: 4,
+                        size_min: 0.3
+                      }
+                    },
+                    line_linked: {
+                      enable: false
+                    },
+                    move: {
+                      random: true,
+                      speed: 1,
+                      direction: "top",
+                      out_mode: "out"
+                    }
+                  },
+                  interactivity: {
+                    events: {
+                      onhover: {
+                        enable: true,
+                        mode: "bubble"
+                      },
+                      onclick: {
+                        enable: true,
+                        mode: "repulse"
+                      }
+                    },
+                    modes: {
+                      bubble: {
+                        distance: 150,
+                        duration: 2,
+                        size: 5,
+                        opacity: 1
+                      },
+                      repulse: {
+                        distance: 200,
+                        duration: 2
+                      }
+                    }
+                  }
+                }}
+              />
             </div>
-            <section id="profile" className="section section-dark">
+            <section className="section section-dark" id="profile">
               <h2>Profile</h2>
               <hr />
               <Parallax offsetXMax={0} offsetXMin={20}>
@@ -178,7 +234,7 @@ class App extends Component {
               </Parallax>
               <div className="clear" />
             </section>
-            <section id="profile" className="section section-light">
+            <section className="section section-light">
               <h2>Education</h2>
               <hr />
               <Parallax offsetYMax={-10} offsetYMin={30}>
@@ -199,7 +255,7 @@ class App extends Component {
               </Parallax>
             </section>
 
-            <div id="experience" className="pimg2">
+            <div className="pimg2">
               <div className="ptext">
                 <span className={`border trans`} id={`experience`}>
                   {experience.map((letter, i) => (
@@ -215,7 +271,7 @@ class App extends Component {
             </div>
 
             <section className="section section-dark">
-              <h2>Career</h2>
+              <h2 id="experience">Career</h2>
               <hr />
               <Parallax offsetXMax={0} offsetXMin={-10}>
                 <Experiences
@@ -253,23 +309,25 @@ class App extends Component {
             <section className="section section-light">
               <h2>Additional Experience</h2>
               <hr />
-              <Experiences
-                place="Hackathons"
-                duration="December 2017 - Present"
-                title="Hacker"
-                description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU"
-                location="Boston, MA"
-              />
-              <Experiences
-                place="Dunkin' Donuts"
-                duration="September 2015 - June 2018"
-                title="Part-time Employee"
-                description=""
-                location="Milton, MA"
-              />
+              <Parallax offsetYMax={-10} offsetYMin={30}>
+                <Experiences
+                  place="Hackathons"
+                  duration="December 2017 - Present"
+                  title="Hacker"
+                  description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU"
+                  location="Boston, MA"
+                />
+                <Experiences
+                  place="Dunkin' Donuts"
+                  duration="September 2015 - June 2018"
+                  title="Part-time Employee"
+                  description=""
+                  location="Milton, MA"
+                />
+              </Parallax>
             </section>
 
-            <div id="project" className="pimg3">
+            <div className="pimg3">
               <div className="ptext">
                 <span className={`border trans`} id={`experience`}>
                   {projects.map((letter, i) => (
@@ -287,7 +345,7 @@ class App extends Component {
                 target="_blank"
                 href="https://github.com/halmonlui"
               >
-                <h2>github.com/halmonlui</h2>
+                <h2 id="project">github.com/halmonlui</h2>
               </a>
               <hr />
               <Projects
@@ -314,7 +372,7 @@ class App extends Component {
               <div className="clear" />
             </section>
 
-            <div id="contact" className="pimg4">
+            <div className="pimg4">
               <div className="ptext">
                 <span className={`border trans`} id={`experience`}>
                   {contact.map((letter, i) => (
@@ -326,7 +384,7 @@ class App extends Component {
               </div>
             </div>
 
-            <section className="section section-dark">
+            <section className="section section-dark" id="contact">
               <h2>Contact</h2>
               <hr />
               <br />
