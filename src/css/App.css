@@ -1,223 +1,228 @@
-
-
-body, html{
+body,
+html {
   height: 100%;
-  margin:0;
-  font-size:16px;
-  font-family:"Lato", sans-serif;
-  font-weight:400;
-  line-height:1.8em;
-  color:#666;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
 
-
-.navbar{
-  background-color:none;
-  overflow:hidden;
-  height:63px;
-  position:fixed;
-  z-index:1;
+.navbar {
+  background-color: none;
+  overflow: hidden;
+  height: 63px;
+  position: fixed;
+  z-index: 1;
 }
-.navbar p{
-  float:left;
-  display:block;
-  color:#f2f2f2;
-  text-align:center;
-  padding:14px 16px;
+.navbar p {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
-.navbar p:hover{
-  background-color:#ddd;
-  color:#000;
-  cursor:pointer;
+.navbar p:hover {
+  background-color: #ddd;
+  color: #000;
+  cursor: pointer;
 }
-.side-nav{
-  height:100%;
-  width:0;
-  overflow:hidden;
-  position:fixed;
-  z-index:1;
-  top:0;
-  left:0;
-  background-color:#111;
-  opacity:0.9;
-  overflow-x:hidden;
-  padding-top:60px;
-  transition:0.5s;
+.side-nav {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
-.side-nav p{
-  padding:10px 10px 10px 30px;
-  text-decoration:none;
-  font-size:22px;
-  color:#ccc;
-  display:block;
-  transition:0.3s;
+.side-nav p {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
 }
-.side-nav p:hover{
-  color:#fff;
-  cursor:pointer;
+.side-nav p:hover {
+  color: #fff;
+  cursor: pointer;
 }
-.side-nav .btn-close{
-  position:absolute;
-  top:0;
-  right:22px;
-  font-size:36px;
-  margin-left:50px;
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4{
-  position:relative;
-  opacity:0.70;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   /*
     Fixed = Parallax
     Scroll = Normal
   */
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
-.pimg1{
-  background-image:url('../images/desert.jpeg');
-  min-height:100vh;
+.pimg1 {
+  background-image: url("../images/desert.jpeg");
+  min-height: 100vh;
 }
-.pimg2{
-  background-image:url('../images/calm.jpeg');
-  min-height:400px;
+.pimg2 {
+  background-image: url("../images/calm.jpeg");
+  min-height: 400px;
 }
-.pimg3{
-  background-image:url('../images/autumn.jpeg');
-  min-height:400px;
+.pimg3 {
+  background-image: url("../images/autumn.jpeg");
+  min-height: 400px;
 }
-.pimg4{
-  background-image:url('../images/bison.jpeg');
-  min-height:400px;
-}
-
-.section{
-  text-align:center;
-  padding:50px 80px;
+.pimg4 {
+  background-image: url("../images/bison.jpeg");
+  min-height: 400px;
 }
 
-.section-light{
-  background-color:#f4f4f4;
-  color:#666;
+.section {
+  text-align: center;
+  padding: 50px 80px;
 }
 
-.section-dark{
-  background-color:#282e34;
-  color:#ddd;
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
 }
 
-.ptext{
-  position:absolute;
-  top:50%;
-  width:100%;
-  text-align:center;
-  color:#000;
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
   text-shadow: 1px 1px 2px black;
 }
 
-.ptext .border{
-  background-color:#111;
-  color:#fff;
-  padding:20px;
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
 }
 
-.ptext .borderwelcome{
-  background-color:#111;
-  color:#fff;
-  padding:20px;
-  letter-spacing:4px;
-  text-transform:capitalize;
-  position:relative;
-  top:1%;
-  width:100%;
+.ptext .borderwelcome {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  position: relative;
+  top: 1%;
+  width: 100%;
 }
-.ptext .border.trans{
-  background-color:transparent;
+.ptext .border.trans {
+  background-color: transparent;
 }
 
-.profilepic{
-  border-radius:50%;
-  overflow:hidden;
-  width:150px;
-  height:150px;
+.profilepic {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
 }
-.profileLeft{
-  width:30%;
-  float:left;
-  text-align:left;
-  padding:20px;
+.profileLeft {
+  width: 30%;
+  float: left;
+  text-align: left;
+  padding: 20px;
   margin: 0 0 0 15vw;
 }
-.profileRight{
-  width:30%;
-  float:right;
+.profileRight {
+  width: 30%;
+  float: right;
   text-align: left;
-  padding:20px;
+  padding: 20px;
   margin: 0 10vw 0 0;
 }
-#getInTouch{
+#getInTouch {
   color: lightblue;
 }
-#getInTouch:hover{
+#getInTouch:hover {
   cursor: pointer;
 }
-
-.experienceLeft{
+#experience {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.experienceLeft {
   display: inline-block;
-  width:30%;
-  float:left;
-  text-align:left;
-  padding:5px;
+  width: 30%;
+  float: left;
+  text-align: left;
+  padding: 5px;
   margin: 0 0 0 20vw;
 }
-.experienceRight{
+.experienceRight {
   display: inline-block;
-  width:30%;
-  float:right;
+  width: 30%;
+  float: right;
   text-align: left;
-  padding:5px;
+  padding: 5px;
   margin: 0 10vw 0 0;
 }
 
 .clear {
-  clear:both;
+  clear: both;
 }
 
-#github{
+#github {
   text-decoration: none;
   color: #000;
 }
-#github:hover{
-  color:#666;
+#github:hover {
+  color: #666;
 }
-.projects{
+.projects {
   float: left;
   margin: 80px 6% 150px 6%;
-  height:300px;
-  width:21.33%;
-  position:relative;
+  height: 300px;
+  width: 21.33%;
+  position: relative;
 }
-.projects .image{
-  position:absolute;
-  height:300px;
+.projects .image {
+  position: absolute;
+  height: 300px;
   width: 100%;
   left: 0px;
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: 1px 2px 1px gray;
 }
-.tags{
+.tags {
   font-size: 14px;
 }
-.projects .image:hover{
+.projects .image:hover {
   cursor: pointer;
   opacity: 0.1;
   transition: 0.5s;
@@ -236,18 +241,18 @@ body, html{
   text-decoration: none;
 }
 
-footer hr{
+footer hr {
   border: none;
   background-color: #33383c;
   color: #33383c;
   height: 1px;
 }
-footer p{
+footer p {
   font-size: 14px;
   text-align: right;
 }
 
-.toTop{
+.toTop {
   text-decoration: none;
   font-size: 12px;
   padding: 5px;
@@ -258,24 +263,24 @@ footer p{
   border-radius: 0px;
   border-width: thin;
 }
-.toTop:hover{
+.toTop:hover {
   background-color: #33383c;
   cursor: pointer;
 }
-.toTop:active{
+.toTop:active {
   border-width: medium;
 }
 
-.toProfile{
+.toProfile {
+  @include animation(bounce 2s infinite);
 }
-.toProfile:hover{
+.toProfile:hover {
   cursor: pointer;
 }
 
-
-#particles-js{
-  background:firebrick;
-  height:400px;
+#particles-js {
+  background: firebrick;
+  height: 400px;
 }
 
 .App-logo {
@@ -283,39 +288,57 @@ footer p{
   height: 80px;
 }
 
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3, .pimg4{
-    background-attachment:scroll;
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    background-attachment: scroll;
   }
-  .pimg1{
-    min-height:800px;  
+  .pimg1 {
+    min-height: 800px;
   }
-  .profileLeft, .profileRight{
+  .profileLeft,
+  .profileRight {
     position: relative;
-    margin:0px 0px 0 0;
-    padding:0px;
-    width:100%;
+    margin: 0px 0px 0 0;
+    padding: 0px;
+    width: 100%;
   }
-  .experienceLeft, .experienceRight{
+  .experienceLeft,
+  .experienceRight {
     position: relative;
-    margin:0px 0px 0px 0px;
-    width:100%;
-    padding:0px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 0px;
   }
-  .projects{
+  .projects {
     margin: 80px 1% 40px 1%;
-    height:300px;
-    width:100%;
-    position:relative;
+    height: 300px;
+    width: 100%;
+    position: relative;
   }
-  .projects .image{
-    opacity: .2;
+  .projects .image {
+    opacity: 0.2;
   }
-  footer p{
+  footer p {
     text-align: center;
   }
 }
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
 }
