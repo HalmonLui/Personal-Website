@@ -273,7 +273,7 @@ class App extends Component {
             <section className="section section-dark">
               <h2 id="experience">Career</h2>
               <hr />
-              <Parallax offsetXMax={0} offsetXMin={-10}>
+              <Parallax offsetXMax={0} offsetXMin={0}>
                 <Experiences
                   place="Visible Systems Corp"
                   duration="September 2018 - Present"
