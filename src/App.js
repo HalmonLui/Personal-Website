@@ -25,6 +25,10 @@ import chatbot from "./images/chatbot.png";
 import porododge from "./images/poroDodge.png";
 import musicboi from "./images/musicboi.png";
 import stockfindar from "./images/stock-findar.PNG";
+import essayboi from "./images/essayboi.PNG";
+import vetricle from "./images/vetricle.PNG";
+import pathogym from "./images/pathogym.PNG";
+import spacex from "./images/spacex.PNG";
 
 class App extends Component {
   openSlideMenu = function() {
@@ -348,28 +352,72 @@ class App extends Component {
                 <h2 id="project">github.com/halmonlui</h2>
               </a>
               <hr />
-              <Projects
-                title="Stock FindAR"
-                source={stockfindar}
-                link="https://github.com/HalmonLui/whack_2018"
-                description="Discover what items have stocks behind it through this augmented reality application and view it on the website."
-                tags="Node.js, React.js, React Native, Flask, Python3, Serveo, Viro Media"
-              />
-              <Projects
-                title="Texting Chatbot"
-                source={chatbot}
-                link="https://github.com/HalmonLui/MLH-Local-Hack-Day"
-                description="Texting chatbot assists in daily minor tasks. Eg: Searching for wikipedia articles, current stock prices, etc."
-                tags="Python3, Flask, Twilio, Ngrok"
-              />
-              <Projects
-                title="MusicBoi"
-                source={musicboi}
-                link="https://github.com/HalmonLui/hack_harvard_2018/tree/FlaskServer"
-                description="Transform your words to midi music through our app, website, or chrome extension."
-                tags="Python3, Flask, Serveo, React-Native"
-              />
-              <div className="clear" />
+              <div className="projectsContainer">
+                <Projects
+                  title="Stock FindAR"
+                  source={stockfindar}
+                  link="https://github.com/HalmonLui/whack_2018"
+                  description="Discover what items have stocks behind it through this augmented reality application and view it on the website."
+                  tags="Node.js, React.js, React Native, Flask, Python3, Serveo, Viro Media, Domain"
+                />
+                <Projects
+                  title="Essay Boi"
+                  source={essayboi}
+                  link="https://github.com/HalmonLui/local_hack_day_2018"
+                  description="Mobile application which takes a picture and converts hand written documents into a Google Document you can edit."
+                  tags="React Native, Expo, Node.js, Google Cloud, Microsoft Azure, Serveo"
+                />
+                <Projects
+                  title="Music Boi"
+                  source={musicboi}
+                  link="https://github.com/HalmonLui/hack_harvard_2018/tree/FlaskServer"
+                  description="Analyzes the sentiment of your text and transforms your words to midi music through the app, website, or chrome extension."
+                  tags="React-Native, Python3, Flask, Serveo, HTML5, CSS3, Domain"
+                />
+                <Projects
+                  title="Vetricle"
+                  source={vetricle}
+                  link="https://github.com/HalmonLui/boston_hacks_2018/tree/app"
+                  description="Physically meet up with veterans in your area through this application. Communicate with others and register for events."
+                  tags="React-Native, React.js, Python3, Flask, Serveo, Domain"
+                />
+                <Projects
+                  title="Pathogym"
+                  source={pathogym}
+                  link="https://github.com/HalmonLui/perkins_hacks_2018"
+                  description="Help the visually impaired around a technology infested gym. Know which machines are available at all times."
+                  tags="React.js, Python3, Ngrok, Adobe Photoshop, Domain"
+                />
+                <Projects
+                  title="Texting Chatbot"
+                  source={chatbot}
+                  link="https://github.com/HalmonLui/MLH-Local-Hack-Day"
+                  description="Texting chatbot assists in minor daily tasks. Eg: Searching for wikipedia articles, current stock prices, etc."
+                  tags="Python3, Flask, Twilio, Ngrok, Google Finance, Yahoo Finance, Wikipedia"
+                />
+                <Projects
+                  title="SpaceX Launches"
+                  source={spacex}
+                  link="https://github.com/HalmonLui/spaceX-graphQL-practice"
+                  description="View the successes and failures of SpaceX rocket launches."
+                  tags="React.js, Node.js, Express.js, Cors, Apollo GraphQL, Bootstrap, Heroku"
+                />
+                <Projects
+                  title="Poro Dodge"
+                  source={porododge}
+                  link="https://github.com/HalmonLui/Poro-Dodge"
+                  description="Minigame where you play as Poro, you eat cookies to speed up, and you dodge rockets!"
+                  tags="Python3, Pygame, cx_Freeze"
+                />
+                <Projects
+                  title="Portfolio Website"
+                  source={personalwebsite}
+                  link="https://github.com/HalmonLui/Personal-Website"
+                  description="You are here! Originally hosted on a Raspberry Pi 3 but due to bad uptimes, deployment was changed to Heroku. Design by Halmon Lui."
+                  tags="React.js, Heroku, Ngrok, Serveo, Raspberry Pi 3, Particles.js, Domain"
+                />
+                <div className="clear" />
+              </div>
             </section>
 
             <div className="pimg4">
