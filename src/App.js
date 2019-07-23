@@ -29,6 +29,7 @@ import essayboi from "./images/essayboi.PNG";
 import vetricle from "./images/vetricle.PNG";
 import pathogym from "./images/pathogym.PNG";
 import spacex from "./images/spacex.PNG";
+import photostack from "./images/photostack.PNG";
 
 class App extends Component {
   openSlideMenu = function() {
@@ -366,6 +367,13 @@ class App extends Component {
                   link="https://github.com/HalmonLui/local_hack_day_2018"
                   description="Mobile application which takes a picture and converts hand written documents into a Google Document you can edit."
                   tags="React Native, Expo, Node.js, Google Cloud, Microsoft Azure, Serveo"
+                />
+                <Projects
+                  title="PhotoStack"
+                  source={photostack}
+                  link="https://github.com/HalmonLui/hacktheheights2019"
+                  description="Highly responsive decentralized social network for secure photo sharing using blockchain technology."
+                  tags="React.js, Blockstack, Blockchain, Google Cloud, JavaScript, HTML5, CSS3"
                 />
                 <Projects
                   title="Music Boi"
