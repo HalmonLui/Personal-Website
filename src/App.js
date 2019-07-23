@@ -234,8 +234,8 @@ class App extends Component {
                     gateway drug to programming.
                   </p>
                   <p>
-                    Aside from programming, I'm an avid pianist and I love to
-                    create music.
+                    Aside from programming, I'm an avid pianist who loves to
+                    travel and eat.
                   </p>
                   <p>
                     If you have a question for me or want to drop me a quick
