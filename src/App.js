@@ -76,7 +76,17 @@ class App extends Component {
     };
     element.scrollIntoView(scrollIntoViewOptions);
   };
-
+  age = function() {
+    var dateString = "1997/07/24";
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  };
   render() {
     var d = new Date();
     const experience = "EXPERIENCE".split("");
@@ -202,7 +212,7 @@ class App extends Component {
                     Halmon Lui <br />
                     <br />
                     <b>Age:</b> <br />
-                    21
+                    {this.age()}
                     <br />
                     <br />
                     <b>Location:</b> <br />
@@ -246,7 +256,7 @@ class App extends Component {
                 <Experiences
                   place="Wentworth Institute of Technology"
                   duration="September 2015 - Present"
-                  title="Bachelor - Computer Engineering (Minor: Computer Science)"
+                  title="BS Computer Engineering (Minor in Computer Science)"
                   description=""
                   location="Boston, MA"
                 />
@@ -283,21 +293,21 @@ class App extends Component {
                   place="Visible Systems Corp"
                   duration="September 2018 - Present"
                   title="Full-time Developer Co-op"
-                  description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework."
+                  description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
                   location="Boston, MA"
                 />
                 <Experiences
                   place="Biotake"
                   duration="January 2018 - Present"
                   title="Research Assistant"
-                  description="I engineered better methods for creating a lightweight real-time big data framework. Additionally, I designed the RESTful API and Database model with a paper on security"
+                  description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
                   location="Boston, MA"
                 />
                 <Experiences
                   place="Electrical Lab"
-                  duration="September 2015 - Present"
+                  duration="September 2015 - December 2018"
                   title="Part-time Lab Assistant"
-                  description="I manage the inventory, set up the lab equipment, and help students with parts that they need for their circuits. "
+                  description="Managed the inventory, set up the lab equipment, and helped students with parts that they need for their circuits. "
                   location="Boston, MA"
                 />
                 <Experiences
@@ -316,11 +326,18 @@ class App extends Component {
               <hr />
               <Parallax offsetYMax={-10} offsetYMin={30}>
                 <Experiences
-                  place="Hackathons"
+                  place="Hackathons (10)"
                   duration="December 2017 - Present"
                   title="Hacker"
-                  description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU"
+                  description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU, MakeHarvard 2019, Hack the Heights 2019"
                   location="Boston, MA"
+                />
+                <Experiences
+                  place="2019 International Conference on Security and Management (SAM'19)"
+                  duration="July 2019 - August 2019"
+                  title="Researcher, Primary Author"
+                  description="Presented the paper 'Security Lessons from Building a Back-End Service for Data Collection'"
+                  location="Las Vegas, NV"
                 />
                 <Experiences
                   place="Dunkin' Donuts"
