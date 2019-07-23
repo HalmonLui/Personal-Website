@@ -226,16 +226,16 @@ class App extends Component {
                     front-end to the back-end.
                   </p>
                   <p>
-                    I'm constantly cycling through new ideas be it designing a
-                    website or creating a program.
+                    I'm constantly cycling through new ideas be it developing an
+                    app or creating a hardware hack.
                   </p>
                   <p>
                     It all started with my TI-84: the quadratic formula, the
                     gateway drug to programming.
                   </p>
                   <p>
-                    Aside from programming, I'm an avid pianist who loves to
-                    travel and eat.
+                    Aside from programming, I'm an avid pianist whose second
+                    calling is to travel and eat.
                   </p>
                   <p>
                     If you have a question for me or want to drop me a quick
