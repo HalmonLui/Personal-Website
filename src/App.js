@@ -30,6 +30,7 @@ import vetricle from "./images/vetricle.PNG";
 import pathogym from "./images/pathogym.PNG";
 import spacex from "./images/spacex.PNG";
 import photostack from "./images/photostack.PNG";
+import financeboi from "./images/financeboi.PNG";
 
 class App extends Component {
   openSlideMenu = function() {
@@ -130,7 +131,7 @@ class App extends Component {
               >
                 <div className="ptext">
                   <span className="border">Halmon Lui</span>
-                  <p className="border trans">Computer Engineer</p>
+                  <p className="border trans">Full Stack Developer</p>
 
                   <img
                     className="toProfile"
@@ -222,20 +223,16 @@ class App extends Component {
                 <div className="profileRight">
                   <h3>About Me</h3>
                   <p>
-                    Hi I’m Halmon, a student who enjoys working from the
-                    front-end to the back-end.
+                    Hi I’m Halmon, a dev who enjoys working from the front-end
+                    to the back-end.
                   </p>
                   <p>
                     I'm constantly cycling through new ideas be it developing an
                     app or creating a hardware hack.
                   </p>
                   <p>
-                    It all started with my TI-84: the quadratic formula, the
-                    gateway drug to programming.
-                  </p>
-                  <p>
-                    Aside from programming, I'm an avid pianist whose second
-                    calling is to travel and eat.
+                    Aside from programming, I'm a gentle bouldering addict who
+                    also plays the piano.
                   </p>
                   <p>
                     If you have a question for me or want to drop me a quick
@@ -255,7 +252,7 @@ class App extends Component {
               <Parallax offsetYMax={-10} offsetYMin={30}>
                 <Experiences
                   place="Wentworth Institute of Technology"
-                  duration="September 2015 - Present"
+                  duration="September 2015 - August 2019"
                   title="BS Computer Engineering (Minor in Computer Science)"
                   description=""
                   location="Boston, MA"
@@ -290,16 +287,23 @@ class App extends Component {
               <hr />
               <Parallax offsetXMax={0} offsetXMin={0}>
                 <Experiences
+                  place="Reggora"
+                  duration="September 2019 - Present"
+                  title="Full-time Full Stack Developer"
+                  description="Create new and improve existing front-end React.js components. Develop back-end API endpoints using Python Flask with ElasticSearch. Engineer efficient database migrations for MongoDB."
+                  location="Boston, MA"
+                />
+                <Experiences
                   place="Visible Systems Corp"
-                  duration="September 2018 - Present"
-                  title="Full-time Developer Co-op"
+                  duration="September 2018 - September 2019"
+                  title="Full-time Full Stack Developer Co-op"
                   description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
                   location="Boston, MA"
                 />
                 <Experiences
                   place="Biotake"
-                  duration="January 2018 - Present"
-                  title="Research Assistant"
+                  duration="January 2018 - September 2019"
+                  title="Full Stack Research Assistant"
                   description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
                   location="Boston, MA"
                 />
@@ -326,10 +330,10 @@ class App extends Component {
               <hr />
               <Parallax offsetYMax={-10} offsetYMin={30}>
                 <Experiences
-                  place="Hackathons (10)"
-                  duration="December 2017 - Present"
+                  place="Hackathons (14)"
+                  duration="December 2017 - December 2019"
                   title="Hacker"
-                  description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU, MakeHarvard 2019, Hack the Heights 2019"
+                  description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU, MakeHarvard 2019, Hack the Heights 2019, Microsoft Azure AI Hacks 2019, Hack the North 2019, Pitt Challenge 2019, Hack Harvard 2019"
                   location="Boston, MA"
                 />
                 <Experiences
@@ -391,6 +395,13 @@ class App extends Component {
                   link="https://github.com/HalmonLui/hacktheheights2019"
                   description="Highly responsive decentralized social network for secure photo sharing using blockchain technology."
                   tags="React.js, Blockstack, Blockchain, Google Cloud, JavaScript, HTML5, CSS3"
+                />
+                <Projects
+                  title="Finance Boi"
+                  source={financeboi}
+                  link="https://github.com/HalmonLui/msft-azure-hacks-2019"
+                  description="Use algo trading combined with sentiment analysis (Twitter feeds, news sources) to trade on the market."
+                  tags="Vue.js, Express.js, Firebase, Azure, Python3, Mongo Atlas, JavaScript, HTML5, CSS3"
                 />
                 <Projects
                   title="Music Boi"
