@@ -18,7 +18,7 @@ import {
 } from "react-scroll";
 import "./css/App.css";
 
-import profilePicture from "./images/profile-picture.jpg";
+import profilePicture from "./images/profile-picture1.jpg";
 import downarrow from "./images/down-icon.png";
 import personalwebsite from "./images/personalwebsite.png";
 import chatbot from "./images/chatbot.png";
