@@ -8,7 +8,6 @@ html {
   line-height: 1.8em;
   color: #666;
 }
-
 .navbar {
   background-color: none;
   overflow: hidden;
@@ -21,7 +20,9 @@ html {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: auto;
+  margin: 1em;
+  padding: .5em .5em .5em .5em;
   text-decoration: none;
   font-size: 17px;
 }
