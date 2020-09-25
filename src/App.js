@@ -31,6 +31,8 @@ import pathogym from "./images/pathogym.PNG";
 import spacex from "./images/spacex.PNG";
 import photostack from "./images/photostack.PNG";
 import financeboi from "./images/financeboi.PNG";
+import appointmate from './images/appointmate.PNG'
+import mysafestay from './images/mysafestay.PNG';
 
 class App extends Component {
   openSlideMenu = function() {
@@ -300,7 +302,7 @@ class App extends Component {
               />
               <Experiences
                 place="Biotake"
-                duration="January 2018 - September 2019"
+                duration="January 2018 - January 2020"
                 title="Full Stack Research Assistant"
                 description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
                 location="Boston, MA"
@@ -372,6 +374,20 @@ class App extends Component {
               </a>
               <hr />
               <div className="projectsContainer">
+                <Projects
+                  title="MySafeStay"
+                  source={mysafestay}
+                  link="https://www.mysafestay.com"
+                  description="Learn and analyze crime data about a neighborhood via an Airbnb/Zillow url or address"
+                  tags="React.js, Flask, Python3, MongoDB, NGINX, GCP, Google Analytics, Adsense"
+                />
+                <Projects
+                  title="AppointMate"
+                  source={appointmate}
+                  link="https://github.com/HalmonLui/AppointMate"
+                  description="Users get to put in their availability on the app and the app will find them the nearest salons closest to their preferences"
+                  tags="React.js, Flask, Python3, Square API, GCP"
+                />
                 <Projects
                   title="Stock FindAR"
                   source={stockfindar}
