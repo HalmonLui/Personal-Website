@@ -249,22 +249,21 @@ class App extends Component {
             <section className="section section-light">
               <h2>Education</h2>
               <hr />
-              <Parallax offsetYMax={-10} offsetYMin={30}>
-                <Experiences
-                  place="Wentworth Institute of Technology"
-                  duration="September 2015 - August 2019"
-                  title="BS Computer Engineering (Minor in Computer Science)"
-                  description=""
-                  location="Boston, MA"
-                />
-                <Experiences
-                  place="Braintree High School"
-                  duration="September 2011 - June 2015"
-                  title="High School Education"
-                  description=""
-                  location="Braintree, MA"
-                />
-              </Parallax>
+              <br />
+              <Experiences
+                place="Wentworth Institute of Technology"
+                duration="September 2015 - August 2019"
+                title="BS Computer Engineering (Minor in Computer Science)"
+                description=""
+                location="Boston, MA"
+              />
+              <Experiences
+                place="Braintree High School"
+                duration="September 2011 - June 2015"
+                title="High School Education"
+                description=""
+                location="Braintree, MA"
+              />
             </section>
 
             <div className="pimg2">
@@ -285,72 +284,70 @@ class App extends Component {
             <section className="section section-dark">
               <h2 id="experience">Career</h2>
               <hr />
-              <Parallax offsetXMax={0} offsetXMin={0}>
-                <Experiences
-                  place="Reggora"
-                  duration="September 2019 - Present"
-                  title="Full-time Full Stack Developer"
-                  description="Create new and improve existing front-end React.js components. Develop back-end API endpoints using Python Flask with ElasticSearch. Engineer efficient database migrations for MongoDB."
-                  location="Boston, MA"
-                />
-                <Experiences
-                  place="Visible Systems Corp"
-                  duration="September 2018 - September 2019"
-                  title="Full-time Full Stack Developer Co-op"
-                  description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
-                  location="Boston, MA"
-                />
-                <Experiences
-                  place="Biotake"
-                  duration="January 2018 - September 2019"
-                  title="Full Stack Research Assistant"
-                  description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
-                  location="Boston, MA"
-                />
-                <Experiences
-                  place="Electrical Lab"
-                  duration="September 2015 - December 2018"
-                  title="Part-time Lab Assistant"
-                  description="Managed the inventory, set up the lab equipment, and helped students with parts that they need for their circuits. "
-                  location="Boston, MA"
-                />
-                <Experiences
-                  place="LM Heavy Civil"
-                  duration="May 2016 - August 2016"
-                  title="Full-time Estimating Intern"
-                  description="I did important takeoffs for upcoming civil projects which helped decide the total bid price of a new job."
-                  location="Quincy, MA"
-                />
-              </Parallax>
+              <Experiences
+                place="Reggora"
+                duration="September 2019 - Present"
+                title="Full-time Full Stack Developer"
+                description="Create new and improve existing front-end React.js components. Develop back-end API endpoints using Python Flask with ElasticSearch. Engineer efficient database migrations for MongoDB."
+                location="Boston, MA"
+              />
+              <Experiences
+                place="Visible Systems Corp"
+                duration="September 2018 - September 2019"
+                title="Full-time Full Stack Developer Co-op"
+                description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
+                location="Boston, MA"
+              />
+              <Experiences
+                place="Biotake"
+                duration="January 2018 - September 2019"
+                title="Full Stack Research Assistant"
+                description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
+                location="Boston, MA"
+              />
+              <Experiences
+                place="Electrical Lab"
+                duration="September 2015 - December 2018"
+                title="Part-time Lab Assistant"
+                description="Managed the inventory, set up the lab equipment, and helped students with parts that they need for their circuits. "
+                location="Boston, MA"
+              />
+              <Experiences
+                place="LM Heavy Civil"
+                duration="May 2016 - August 2016"
+                title="Full-time Estimating Intern"
+                description="I did important takeoffs for upcoming civil projects which helped decide the total bid price of a new job."
+                location="Quincy, MA"
+              />
               <br />
               <br />
             </section>
             <section className="section section-light">
               <h2>Additional Experience</h2>
               <hr />
-              <Parallax offsetYMax={-10} offsetYMin={30}>
-                <Experiences
-                  place="Hackathons (14)"
-                  duration="December 2017 - December 2019"
-                  title="Hacker"
-                  description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018, HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU, MakeHarvard 2019, Hack the Heights 2019, Microsoft Azure AI Hacks 2019, Hack the North 2019, Pitt Challenge 2019, Hack Harvard 2019"
-                  location="Boston, MA"
-                />
-                <Experiences
-                  place="2019 International Conference on Security and Management (SAM'19)"
-                  duration="July 2019 - August 2019"
-                  title="Researcher, Primary Author"
-                  description="Presented the paper 'Security Lessons from Building a Back-End Service for Data Collection'"
-                  location="Las Vegas, NV"
-                />
-                <Experiences
-                  place="Dunkin' Donuts"
-                  duration="September 2015 - June 2018"
-                  title="Part-time Employee"
-                  description=""
-                  location="Milton, MA"
-                />
-              </Parallax>
+              <Experiences
+                place="Hackathons (15)"
+                duration="December 2017 - December 2019"
+                title="Hacker"
+                description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018,
+                HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU, MakeHarvard 2019, Hack the Heights 2019,
+                Microsoft Azure AI Hacks 2019, Hack the North 2019, Pitt Challenge 2019, Hack Harvard 2019, The Square Small Business Hackathon 2020"
+                location="Boston, MA"
+              />
+              <Experiences
+                place="2019 International Conference on Security and Management (SAM'19)"
+                duration="July 2019 - August 2019"
+                title="Researcher, Primary Author"
+                description="Presented the paper 'Security Lessons from Building a Back-End Service for Data Collection'"
+                location="Las Vegas, NV"
+              />
+              <Experiences
+                place="Dunkin' Donuts"
+                duration="September 2015 - June 2018"
+                title="Part-time Employee"
+                description=""
+                location="Milton, MA"
+              />
             </section>
 
             <div className="pimg3">

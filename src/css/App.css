@@ -54,15 +54,15 @@ html {
   transition: 0.3s;
 }
 .side-nav p:hover {
-  color: #fff;
+  color: white;
+  background-color: gray;
   cursor: pointer;
 }
 .side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
+  width: 1em;
+  margin: 0 1em 0 4em;
   font-size: 36px;
-  margin-left: 50px;
+  padding: .25em .1em .25em .5em;
 }
 
 .pimg1,
