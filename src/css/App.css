@@ -252,7 +252,18 @@ html {
   display: inline-block;
   text-align: left;
 }
-
+.contact {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.contact img {
+  height: 1.75em;
+  margin-right: 1em;
+}
+.contact p {
+  margin: 1em 0 1em 0;
+}
 .hyperlink {
   color: #ddd;
   text-decoration: none;

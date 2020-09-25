@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import emailicon from "../images/email-icon.png";
 import phoneicon from "../images/phone-icon.png";
 import contacticon from "../images/contact-icon.png";
+import fileicon from "../images/file-icon.svg";
+import resume from '../HalmonLui_Resume.pdf';
+
 class Contact extends Component {
   render() {
     return (
@@ -11,24 +14,42 @@ class Contact extends Component {
           target="_blank"
           href="mailto:halmonlui@gmail.com"
         >
-          <p className="contact">
-            <img src={emailicon} width="25px" alt="email icon" />{" "}
-            halmonlui@gmail.com
-          </p>
+          <div className="contact">
+            <img src={emailicon} alt="email icon" />{" "}
+            <p>
+              halmonlui@gmail.com
+            </p>
+          </div>
         </a>
-        <p className="contact">
-          <img src={phoneicon} width="25px" alt="cellphone icon" /> (617)
-          733-0634
-        </p>
+        <div className="contact">
+          <img src={phoneicon} alt="cellphone icon" />
+          <p>
+             617.733.0634
+          </p>
+        </div>
         <a
           className="hyperlink"
           target="_blank"
           href="https://www.linkedin.com/in/halmonlui"
         >
-          <p className="contact">
-            <img src={contacticon} width="25px" alt="linkedin icon" />{" "}
+        <div className="contact">
+          <img src={contacticon} alt="linkedin icon" />
+          <p>
             www.linkedin.com/in/halmonlui
           </p>
+        </div>
+        </a>
+        <a
+          className="hyperlink"
+          target="_blank"
+          href={resume}
+        >
+        <div className="contact">
+          <img src={fileicon} alt="resume icon" />
+          <p>
+            Download Resume
+          </p>
+        </div>
         </a>
       </div>
     );
