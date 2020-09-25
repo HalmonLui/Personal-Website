@@ -328,6 +328,9 @@ footer p {
   .pimg1 {
     min-height: 800px;
   }
+  .section {
+    padding: 1em;
+  }
   .profileLeft,
   .profileRight {
     position: relative;
@@ -343,9 +346,9 @@ footer p {
     padding: 0px;
   }
   .projects {
-    margin: 80px 1% 40px 1%;
+    margin: 2em 0 2em .5em;
     height: 300px;
-    width: 100%;
+    width: 90%;
     position: relative;
   }
   .projects .image {
