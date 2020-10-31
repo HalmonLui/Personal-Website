@@ -33,6 +33,14 @@ import photostack from "./images/photostack.PNG";
 import financeboi from "./images/financeboi.PNG";
 import appointmate from './images/appointmate.PNG'
 import mysafestay from './images/mysafestay.PNG';
+import reggora from './images/experiences/reggora.png'
+import visiblesystems from './images/experiences/visiblesystems.png'
+import biotake from './images/experiences/biotake.PNG'
+import wentworth from './images/experiences/wentworth.png'
+import lmh from './images/experiences/lmheavy.jpg'
+import bhs from './images/experiences/bhs.png'
+import mlh from './images/experiences/mlh.png'
+import dunkin from './images/experiences/dunkin.png'
 
 class App extends Component {
   openSlideMenu = function() {
@@ -255,6 +263,7 @@ class App extends Component {
               <Experiences
                 place="Wentworth Institute of Technology"
                 duration="September 2015 - August 2019"
+                image={wentworth}
                 title="BS Computer Engineering (Minor in Computer Science)"
                 description=""
                 location="Boston, MA"
@@ -262,6 +271,7 @@ class App extends Component {
               <Experiences
                 place="Braintree High School"
                 duration="September 2011 - June 2015"
+                image={bhs}
                 title="High School Education"
                 description=""
                 location="Braintree, MA"
@@ -289,13 +299,17 @@ class App extends Component {
               <Experiences
                 place="Reggora"
                 duration="September 2019 - Present"
+                image={reggora}
                 title="Full-time Full Stack Developer"
-                description="Create new and improve existing front-end React.js components. Develop back-end API endpoints using Python Flask with ElasticSearch. Engineer efficient database migrations for MongoDB."
+                description="Create new and improve existing front-end React.js components.
+                  Develop back-end API endpoints using Python Flask with ElasticSearch.
+                  Engineer efficient database migrations for MongoDB. Handle top priority tickets on the support team."
                 location="Boston, MA"
               />
               <Experiences
                 place="Visible Systems Corp"
                 duration="September 2018 - September 2019"
+                image={visiblesystems}
                 title="Full-time Full Stack Developer Co-op"
                 description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
                 location="Boston, MA"
@@ -303,6 +317,7 @@ class App extends Component {
               <Experiences
                 place="Biotake"
                 duration="January 2018 - January 2020"
+                image={biotake}
                 title="Full Stack Research Assistant"
                 description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
                 location="Boston, MA"
@@ -310,6 +325,7 @@ class App extends Component {
               <Experiences
                 place="Electrical Lab"
                 duration="September 2015 - December 2018"
+                image={wentworth}
                 title="Part-time Lab Assistant"
                 description="Managed the inventory, set up the lab equipment, and helped students with parts that they need for their circuits. "
                 location="Boston, MA"
@@ -317,6 +333,7 @@ class App extends Component {
               <Experiences
                 place="LM Heavy Civil"
                 duration="May 2016 - August 2016"
+                image={lmh}
                 title="Full-time Estimating Intern"
                 description="I did important takeoffs for upcoming civil projects which helped decide the total bid price of a new job."
                 location="Quincy, MA"
@@ -330,6 +347,7 @@ class App extends Component {
               <Experiences
                 place="Hackathons (15)"
                 duration="December 2017 - December 2019"
+                image={mlh}
                 title="Hacker"
                 description="Local Hack Day 2017 Simmons, MakeHarvard 2018, MakeMIT 2018, PerkinsHacks 2018, HackHarvard 2018,
                 HackWellesley 2018, BostonHacks 2018, Local Hack Day 2018 BU, MakeHarvard 2019, Hack the Heights 2019,
@@ -339,6 +357,7 @@ class App extends Component {
               <Experiences
                 place="2019 International Conference on Security and Management (SAM'19)"
                 duration="July 2019 - August 2019"
+                image={biotake}
                 title="Researcher, Primary Author"
                 description="Presented the paper 'Security Lessons from Building a Back-End Service for Data Collection'"
                 location="Las Vegas, NV"
@@ -346,6 +365,7 @@ class App extends Component {
               <Experiences
                 place="Dunkin' Donuts"
                 duration="September 2015 - June 2018"
+                image={dunkin}
                 title="Part-time Employee"
                 description=""
                 location="Milton, MA"
@@ -462,7 +482,7 @@ class App extends Component {
                   title="Portfolio Website"
                   source={personalwebsite}
                   link="https://github.com/HalmonLui/Personal-Website"
-                  description="You are here! Originally hosted on a Raspberry Pi 3 but due to bad uptimes, deployment was changed to Heroku. Design by Halmon Lui."
+                  description="You are here! Originally hosted on a Raspberry Pi 3 but due to bad uptimes, deployment was changed to Heroku and later a personal box. Designed and created by Halmon Lui."
                   tags="React.js, Heroku, Ngrok, Serveo, Raspberry Pi 3, Particles.js, Domain"
                 />
                 <div className="clear" />

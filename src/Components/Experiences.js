@@ -5,8 +5,11 @@ class Experiences extends Component {
     return(
       <div className="experiences">
         <div className="experienceLeft">
-          <b className="place">{this.props.place}</b>
-          <p className="duration"><i>{this.props.duration}</i></p>
+          <img className="logo" src={this.props.image} />
+          <div className="text-container">
+            <p><b className="place">{this.props.place}</b></p>
+            <p className="duration"><i>{this.props.duration}</i></p>
+          </div>
         </div>
         <div className="experienceRight">
           <b className="title">{this.props.title}</b>

@@ -178,12 +178,19 @@ html {
   justify-content: center;
 }
 .experienceLeft {
-  display: inline-block;
+  display: flex;
   width: 30%;
   float: left;
   text-align: left;
   padding: 5px;
-  margin: 0 0 0 20vw;
+  margin: 0 0 0 15vw;
+}
+
+.experienceLeft img {
+  height: 5em;
+  width: 5em;
+  object-fit: scale-down;
+  margin: 1em 1em 0em 0em;
 }
 .experienceRight {
   display: inline-block;
@@ -191,7 +198,7 @@ html {
   float: right;
   text-align: left;
   padding: 5px;
-  margin: 0 10vw 0 0;
+  margin: .5em 10vw 0 0;
 }
 
 .clear {
