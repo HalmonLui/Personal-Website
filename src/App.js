@@ -305,6 +305,7 @@ class App extends Component {
                   Develop back-end API endpoints using Python Flask with ElasticSearch.
                   Engineer efficient database migrations for MongoDB. Handle top priority tickets on the support team."
                 location="Boston, MA"
+                locationicon='invert'
               />
               <Experiences
                 place="Visible Systems Corp"
@@ -313,6 +314,7 @@ class App extends Component {
                 title="Full-time Full Stack Developer Co-op"
                 description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
                 location="Boston, MA"
+                locationicon='invert'
               />
               <Experiences
                 place="Biotake"
@@ -321,6 +323,7 @@ class App extends Component {
                 title="Full Stack Research Assistant"
                 description="Investigate better methods for creating a light-weight real-time big data framework. Create RESTful APIs and a NoSQL Database Model for MongoDB. Apply Machine Learning and Multi-scale Entropy to Physiobank’s ECG data. Implement communication between NGINX, Python server and the MongoDB, Express.js, React.js, Node.js (MERN) server stack to handle real-time data."
                 location="Boston, MA"
+                locationicon='invert'
               />
               <Experiences
                 place="Electrical Lab"
@@ -329,6 +332,7 @@ class App extends Component {
                 title="Part-time Lab Assistant"
                 description="Managed the inventory, set up the lab equipment, and helped students with parts that they need for their circuits. "
                 location="Boston, MA"
+                locationicon='invert'
               />
               <Experiences
                 place="LM Heavy Civil"
@@ -337,6 +341,7 @@ class App extends Component {
                 title="Full-time Estimating Intern"
                 description="I did important takeoffs for upcoming civil projects which helped decide the total bid price of a new job."
                 location="Quincy, MA"
+                locationicon='invert'
               />
               <br />
               <br />

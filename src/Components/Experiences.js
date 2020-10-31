@@ -14,7 +14,7 @@ class Experiences extends Component {
         <div className="experienceRight">
           <b className="title">{this.props.title}</b>
           <p className="description">{this.props.description}</p>
-          <p className="location"><img src={locationicon} alt="location icon"/> {this.props.location}</p>
+          <p className="location"><img className={this.props.locationicon} src={locationicon} alt="location icon"/> {this.props.location}</p>
         </div>
         <div className="clear"></div>
         <br/>
