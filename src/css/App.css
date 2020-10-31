@@ -227,7 +227,8 @@ html {
   left: 0px;
   opacity: 1;
   transition: 0.5s;
-  box-shadow: 1px 2px 1px gray;
+  box-shadow: 1px 2px 5px gray;
+  object-fit: cover;
 }
 .projectswrapper: {
   white-space: normal;
@@ -241,7 +242,8 @@ html {
 }
 .projects .image:hover {
   cursor: pointer;
-  opacity: 0.1;
+  transform: scale(1.5, 1.5);
+  opacity: 0.05;
   transition: 0.5s;
 }
 
@@ -353,6 +355,7 @@ footer p {
   }
   .projects .image {
     opacity: 0.2;
+    object-fit: cover;
   }
   footer p {
     text-align: center;
