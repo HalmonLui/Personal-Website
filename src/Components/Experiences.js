@@ -5,7 +5,7 @@ class Experiences extends Component {
     return(
       <div className="experiences">
         <div className="experienceLeft">
-          <img className="logo" src={this.props.image} />
+          <img className="logo" src={this.props.image} alt={"logo of " + this.props.place}/>
           <div className="text-container">
             <p><b className="place">{this.props.place}</b></p>
             <p className="duration"><i>{this.props.duration}</i></p>

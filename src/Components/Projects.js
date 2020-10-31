@@ -7,7 +7,7 @@ class Projects extends Component {
         <b className="title">{this.props.title}</b>
         <div className="projectswrapper">
           <a className="link" target="_blank" href={this.props.link}>
-            <img className="image" src={this.props.source} />
+            <img className="image" src={this.props.source} alt={"screenshot of " + this.props.title}/>
           </a>
           <br />
           <p className="description">{this.props.description}</p>
