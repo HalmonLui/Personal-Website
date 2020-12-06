@@ -273,6 +273,7 @@ html {
 .contact img {
   height: 1.75em;
   margin-right: 1em;
+  filter: brightness(0) invert(1);
 }
 .contact p {
   margin: 1em 0 1em 0;

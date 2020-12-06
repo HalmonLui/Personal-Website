@@ -369,7 +369,7 @@ class App extends Component {
                 location="Shenzhen, China"
               />
               <Experiences
-                place="2019 International Conference on Security and Management (SAM'19)"
+                place="International Conference on Security and Management (SAM'19)"
                 duration="July 2019 - August 2019"
                 image={biotake}
                 title="Researcher, Publication's Primary Author"
