@@ -36,6 +36,7 @@ import mysafestay from './images/mysafestay.PNG';
 import reggora from './images/experiences/reggora.png'
 import visiblesystems from './images/experiences/visiblesystems.png'
 import biotake from './images/experiences/biotake.PNG'
+import healthcom from './images/experiences/healthcom.png'
 import wentworth from './images/experiences/wentworth.png'
 import lmh from './images/experiences/lmheavy.jpg'
 import bhs from './images/experiences/bhs.png'
@@ -360,10 +361,18 @@ class App extends Component {
                 location="Boston, MA"
               />
               <Experiences
+                place="IEEE International Conferencee on E-Health Networking, Application & Services (Healthcom'20)"
+                duration="December 2020"
+                image={healthcom}
+                title="Researcher, Publication's Primary Author"
+                description="Presented the paper 'System Design for Data Analysis with Multiscale Entropy'"
+                location="Shenzhen, China"
+              />
+              <Experiences
                 place="2019 International Conference on Security and Management (SAM'19)"
                 duration="July 2019 - August 2019"
                 image={biotake}
-                title="Researcher, Primary Author"
+                title="Researcher, Publication's Primary Author"
                 description="Presented the paper 'Security Lessons from Building a Back-End Service for Data Collection'"
                 location="Las Vegas, NV"
               />
