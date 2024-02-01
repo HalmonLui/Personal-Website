@@ -34,6 +34,7 @@ import financeboi from "./images/financeboi.PNG";
 import appointmate from './images/appointmate.PNG'
 import mysafestay from './images/mysafestay.PNG';
 import reggora from './images/experiences/reggora.png'
+import indeed from './images/experiences/indeed.png'
 import visiblesystems from './images/experiences/visiblesystems.png'
 import biotake from './images/experiences/biotake.PNG'
 import healthcom from './images/experiences/healthcom.png'
@@ -298,14 +299,26 @@ class App extends Component {
               <h2 id="experience">Career</h2>
               <hr />
               <Experiences
+                place="Indeed"
+                duration="August 2022 - Present"
+                image={indeed}
+                title="Full-time Software Engineer"
+                description="Host design reviews with decision matrices demonstrating the tradeoffs between several approaches.
+                  Develop frontend and backend unit tests and integration tests with 100% code coverage.
+                  Lead initiative of creating a new index builder with junior engineers using Scala, Spark, Hive, and AWS EMR.
+                  Work with stakeholders from other teams to build features spanning multiple projects using TypeScript, React.js, Java, and GraphQL"
+                location="Remote"
+                locationicon='invert'
+              />
+              <Experiences
                 place="Reggora"
-                duration="September 2019 - Present"
+                duration="September 2019 - July 2022"
                 image={reggora}
-                title="Full-time Full Stack Developer"
+                title="Full-time Tech Lead / Full Stack Developer"
                 description="Create new and improve existing front-end React.js components.
                   Develop back-end API endpoints using Python Flask with ElasticSearch.
                   Engineer efficient database migrations for MongoDB. Handle top priority tickets on the support team."
-                location="Boston, MA"
+                location="Remote"
                 locationicon='invert'
               />
               <Experiences
