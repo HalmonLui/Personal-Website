@@ -302,7 +302,7 @@ class App extends Component {
                 place="Indeed"
                 duration="August 2022 - Present"
                 image={indeed}
-                title="Full-time Software Engineer"
+                title="Software Engineer"
                 description="Host design reviews with decision matrices demonstrating the tradeoffs between several approaches.
                   Develop frontend and backend unit tests and integration tests with 100% code coverage.
                   Lead initiative of creating a new index builder with junior engineers using Scala, Spark, Hive, and AWS EMR.
@@ -314,7 +314,7 @@ class App extends Component {
                 place="Reggora"
                 duration="September 2019 - July 2022"
                 image={reggora}
-                title="Full-time Tech Lead / Full Stack Developer"
+                title="Tech Lead / Full Stack Developer"
                 description="Create new and improve existing front-end React.js components.
                   Develop back-end API endpoints using Python Flask with ElasticSearch.
                   Engineer efficient database migrations for MongoDB. Handle top priority tickets on the support team."
@@ -325,7 +325,7 @@ class App extends Component {
                 place="Visible Systems Corp"
                 duration="September 2018 - September 2019"
                 image={visiblesystems}
-                title="Full-time Full Stack Developer Co-op"
+                title="Full Stack Developer Co-op"
                 description="Redesign the web application by replacing existing Razor Pages with React in the ASP.NET MVC framework. Developed new functionality for the software's new release."
                 location="Boston, MA"
                 locationicon='invert'
@@ -343,7 +343,7 @@ class App extends Component {
                 place="Electrical Lab"
                 duration="September 2015 - December 2018"
                 image={wentworth}
-                title="Part-time Lab Assistant"
+                title="Lab Assistant"
                 description="Managed the inventory, set up the lab equipment, and helped students with parts that they need for their circuits. "
                 location="Boston, MA"
                 locationicon='invert'
@@ -352,7 +352,7 @@ class App extends Component {
                 place="LM Heavy Civil"
                 duration="May 2016 - August 2016"
                 image={lmh}
-                title="Full-time Estimating Intern"
+                title="Estimating Intern"
                 description="I did important takeoffs for upcoming civil projects which helped decide the total bid price of a new job."
                 location="Quincy, MA"
                 locationicon='invert'
@@ -393,7 +393,7 @@ class App extends Component {
                 place="Dunkin' Donuts"
                 duration="September 2015 - June 2018"
                 image={dunkin}
-                title="Part-time Employee"
+                title="Employee"
                 description=""
                 location="Milton, MA"
               />
