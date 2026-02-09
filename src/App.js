@@ -35,6 +35,7 @@ import appointmate from './images/appointmate.PNG'
 import mysafestay from './images/mysafestay.PNG';
 import reggora from './images/experiences/reggora.png'
 import indeed from './images/experiences/indeed.png'
+import axon from './images/experiences/axon.png'
 import visiblesystems from './images/experiences/visiblesystems.png'
 import biotake from './images/experiences/biotake.PNG'
 import healthcom from './images/experiences/healthcom.png'
@@ -299,8 +300,17 @@ class App extends Component {
               <h2 id="experience">Career</h2>
               <hr />
               <Experiences
+                place="Axon"
+                duration="January 2026 - Present"
+                image={axon}
+                title="Software Engineer"
+                description="Prepared by Axon. Build and scale real-time public safety tooling with Ruby on Rails, JavaScript, Go, web sockets, and Kafka while partnering with remote teammates."
+                location="San Francisco, CA (Remote)"
+                locationicon='invert'
+              />
+              <Experiences
                 place="Indeed"
-                duration="August 2022 - Present"
+                duration="August 2022 - August 2025"
                 image={indeed}
                 title="Software Engineer"
                 description="Host design reviews with decision matrices demonstrating the tradeoffs between several approaches.
