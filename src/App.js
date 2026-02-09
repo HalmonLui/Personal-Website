@@ -44,6 +44,7 @@ import lmh from './images/experiences/lmheavy.jpg'
 import bhs from './images/experiences/bhs.png'
 import mlh from './images/experiences/mlh.png'
 import dunkin from './images/experiences/dunkin.png'
+import crimpdle from './images/crimpdle.png'
 
 class App extends Component {
   openSlideMenu = function() {
@@ -230,7 +231,7 @@ class App extends Component {
                     <br />
                     <br />
                     <b>Location:</b> <br />
-                    Greater Boston, MA
+                    San Francisco, CA
                   </p>
                 </div>
                 <div className="profileRight">
@@ -444,6 +445,13 @@ class App extends Component {
                   link="https://github.com/HalmonLui/AppointMate"
                   description="Users get to put in their availability on the app and the app will find them the nearest salons closest to their preferences"
                   tags="React.js, Flask, Python3, Square API, GCP"
+                />
+                <Projects
+                  title="Crimpdle"
+                  source={crimpdle}
+                  link="https://www.crimpdle.com/blog"
+                  description="Wordle-style climbing puzzle that reached up to 2,000 daily players."
+                  tags="React.js, Next.js, Vercel, GCP"
                 />
                 <Projects
                   title="Stock FindAR"
